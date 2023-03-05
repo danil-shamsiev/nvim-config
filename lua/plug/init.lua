@@ -47,6 +47,7 @@ return require("packer").startup(function()
       "windwp/nvim-autopairs",
       config = function() require("nvim-autopairs").setup {} end
     }
+    use "tpope/vim-surround"
 
     if packer_bootstrap then
       require("packer").sync()
