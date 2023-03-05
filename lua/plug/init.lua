@@ -43,6 +43,10 @@ return require("packer").startup(function()
     use "puremourning/vimspector"
     use "lewis6991/impatient.nvim"
     use "lukas-reineke/indent-blankline.nvim"
+    use {
+      "windwp/nvim-autopairs",
+      config = function() require("nvim-autopairs").setup {} end
+    }
 
     if packer_bootstrap then
       require("packer").sync()
