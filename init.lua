@@ -1,4 +1,4 @@
 require("impatient")
-require("plug")
 require("opts")
+require("plug")
 require("keymaps")

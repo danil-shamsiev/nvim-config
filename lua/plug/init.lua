@@ -18,6 +18,7 @@ require("plug.neo_tree")
 require("plug.indent_blankline")
 require("plug.illuminate")
 require("plug.telescope")
+require("plug.colorizer")
 
 return require("packer").startup(function()
     use "wbthomason/packer.nvim"
@@ -57,6 +58,7 @@ return require("packer").startup(function()
       tag = "0.1.0",
       requires = { { "nvim-lua/plenary.nvim" } }
     }
+    use "norcalli/nvim-colorizer.lua"
 
     if packer_bootstrap then
       require("packer").sync()

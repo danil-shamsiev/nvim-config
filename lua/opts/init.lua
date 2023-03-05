@@ -20,3 +20,4 @@ vim.cmd [[ colorscheme habamax ]]
 
 require("opts.lsp")
 require("opts.vimspector")
+require("opts.autocmds")
