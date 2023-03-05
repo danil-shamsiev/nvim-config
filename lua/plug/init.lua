@@ -21,6 +21,7 @@ require("plug.telescope")
 require("plug.colorizer")
 require("plug.feline")
 require("plug.gitsigns")
+require("plug.comment")
 
 return require("packer").startup(function()
     use "wbthomason/packer.nvim"
@@ -63,6 +64,7 @@ return require("packer").startup(function()
     use "norcalli/nvim-colorizer.lua"
     use "feline-nvim/feline.nvim"
     use "lewis6991/gitsigns.nvim"
+    use "terrortylor/nvim-comment"
 
     if packer_bootstrap then
       require("packer").sync()
