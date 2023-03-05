@@ -17,6 +17,7 @@ require("plug.rust_tools")
 require("plug.neo_tree")
 require("plug.indent_blankline")
 require("plug.illuminate")
+require("plug.telescope")
 
 return require("packer").startup(function()
     use "wbthomason/packer.nvim"
@@ -51,6 +52,11 @@ return require("packer").startup(function()
     }
     use "tpope/vim-surround"
     use "RRethy/vim-illuminate"
+    use {
+      "nvim-telescope/telescope.nvim",
+      tag = "0.1.0",
+      requires = { { "nvim-lua/plenary.nvim" } }
+    }
 
     if packer_bootstrap then
       require("packer").sync()

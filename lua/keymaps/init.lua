@@ -7,3 +7,4 @@ vim.keymap.set("n", "<Esc>", ":nohlsearch<CR>", opts)
 
 require("keymaps.neo_tree")
 require("keymaps.vimspector")
+require("keymaps.telescope")
