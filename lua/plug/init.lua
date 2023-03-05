@@ -15,21 +15,22 @@ require("plug.mason")
 require("plug.cmp")
 require("plug.rust_tools")
 require("plug.neo_tree")
+require("plug.indent_blankline")
 
 return require("packer").startup(function()
     use "wbthomason/packer.nvim"
-    use "williamboman/mason.nvim"    
+    use "williamboman/mason.nvim"
     use "williamboman/mason-lspconfig.nvim"
-    use "neovim/nvim-lspconfig" 
+    use "neovim/nvim-lspconfig"
     use "simrat39/rust-tools.nvim"
-    use "hrsh7th/nvim-cmp" 
+    use "hrsh7th/nvim-cmp"
     use "hrsh7th/cmp-nvim-lsp"
     use "hrsh7th/cmp-nvim-lua"
     use "hrsh7th/cmp-nvim-lsp-signature-help"
-    use "hrsh7th/cmp-vsnip"                             
-    use "hrsh7th/cmp-path"                              
-    use "hrsh7th/cmp-buffer"                            
-    use "hrsh7th/vim-vsnip"                             
+    use "hrsh7th/cmp-vsnip"
+    use "hrsh7th/cmp-path"
+    use "hrsh7th/cmp-buffer"
+    use "hrsh7th/vim-vsnip"
     use {
       "nvim-neo-tree/neo-tree.nvim",
       branch = "v2.x",
@@ -41,6 +42,7 @@ return require("packer").startup(function()
     }
     use "puremourning/vimspector"
     use "lewis6991/impatient.nvim"
+    use "lukas-reineke/indent-blankline.nvim"
 
     if packer_bootstrap then
       require("packer").sync()
