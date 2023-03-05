@@ -22,6 +22,7 @@ require("plug.colorizer")
 require("plug.feline")
 require("plug.gitsigns")
 require("plug.comment")
+require("plug.bufferline")
 
 return require("packer").startup(function()
     use "wbthomason/packer.nvim"
@@ -47,6 +48,8 @@ return require("packer").startup(function()
         "MunifTanjim/nui.nvim",
       }
     }
+    use {"akinsho/bufferline.nvim", tag = "v3.*", requires = "nvim-tree/nvim-web-devicons"}
+    use "moll/vim-bbye"
     use "puremourning/vimspector"
     use "lewis6991/impatient.nvim"
     use "lukas-reineke/indent-blankline.nvim"
