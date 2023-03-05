@@ -187,6 +187,9 @@ local c = {
       style = "bold",
     },
   },
+  search_count = {
+    provider = "search_count",
+  },
 }
 
 local left = {
@@ -207,6 +210,7 @@ local middle = {
 }
 
 local right = {
+  c.search_count,
   c.lsp_client_names,
   c.file_type,
   c.file_encoding,
