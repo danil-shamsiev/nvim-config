@@ -15,6 +15,8 @@ vim.opt.expandtab = true
 
 vim.opt.cmdheight = 0
 
+vim.opt.undofile = true
+
 vim.o.termguicolors = true
 vim.cmd [[ colorscheme habamax ]]
 
