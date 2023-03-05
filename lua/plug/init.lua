@@ -19,6 +19,7 @@ require("plug.indent_blankline")
 require("plug.illuminate")
 require("plug.telescope")
 require("plug.colorizer")
+require("plug.feline")
 
 return require("packer").startup(function()
     use "wbthomason/packer.nvim"
@@ -59,6 +60,7 @@ return require("packer").startup(function()
       requires = { { "nvim-lua/plenary.nvim" } }
     }
     use "norcalli/nvim-colorizer.lua"
+    use "feline-nvim/feline.nvim"
 
     if packer_bootstrap then
       require("packer").sync()
