@@ -16,6 +16,7 @@ require("plug.cmp")
 require("plug.rust_tools")
 require("plug.neo_tree")
 require("plug.indent_blankline")
+require("plug.illuminate")
 
 return require("packer").startup(function()
     use "wbthomason/packer.nvim"
@@ -48,6 +49,7 @@ return require("packer").startup(function()
       config = function() require("nvim-autopairs").setup {} end
     }
     use "tpope/vim-surround"
+    use "RRethy/vim-illuminate"
 
     if packer_bootstrap then
       require("packer").sync()
