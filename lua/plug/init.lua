@@ -13,7 +13,6 @@ local packer_bootstrap = ensure_packer()
 
 require("plug.mason")
 require("plug.cmp")
-require("plug.rust_tools")
 require("plug.neo_tree")
 require("plug.indent_blankline")
 require("plug.illuminate")
@@ -30,7 +29,6 @@ return require("packer").startup(function()
     use "williamboman/mason.nvim"
     use "williamboman/mason-lspconfig.nvim"
     use "neovim/nvim-lspconfig"
-    use "simrat39/rust-tools.nvim"
     use "hrsh7th/nvim-cmp"
     use "hrsh7th/cmp-nvim-lsp"
     use "hrsh7th/cmp-nvim-lua"
