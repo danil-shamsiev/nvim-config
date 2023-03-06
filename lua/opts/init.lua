@@ -18,7 +18,7 @@ vim.opt.cmdheight = 0
 vim.opt.undofile = true
 
 vim.o.termguicolors = true
-vim.cmd [[ colorscheme habamax ]]
+vim.cmd([[ colorscheme habamax ]])
 
 require("opts.lsp")
 require("opts.vimspector")

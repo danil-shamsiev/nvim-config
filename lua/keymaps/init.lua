@@ -1,9 +1,9 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-local opts = { noremap = true, silent = true }
+KEYMAP_OPTS = { noremap = true, silent = true }
 
-vim.keymap.set("n", "<Esc>", ":nohlsearch<CR>", opts)
+vim.keymap.set("n", "<Esc>", ":nohlsearch<CR>", KEYMAP_OPTS)
 
 require("keymaps.neo_tree")
 require("keymaps.vimspector")
