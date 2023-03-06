@@ -225,30 +225,32 @@ local components = {
 		middle,
 		right,
 	},
-	inactive = {
+  inactive = {
 		left,
 		middle,
 		right,
-	},
+  },
 }
 
 feline.setup({
 	components = components,
 	theme = theme,
 	vi_mode_colors = vi_mode_colors,
-	force_inactive = {
-		filetypes = {
-			"^NvimTree$",
-			"^packer$",
-			"^startify$",
-			"^fugitive$",
-			"^fugitiveblame$",
-			"^qf$",
-			"^help$",
-		},
-		buftypes = {
-			"^terminal$",
-		},
-		bufnames = {},
-	},
+  disable = {
+    filetypes = {
+        '^NvimTree$',
+        '^packer$',
+        '^startify$',
+        '^fugitive$',
+        '^fugitiveblame$',
+        '^qf$',
+        '^help$',
+        '^neo%-tree$',
+        "^alpha$"
+    },
+    buftypes = {
+        '^terminal$',
+    },
+    bufnames = {}
+  }
 })
