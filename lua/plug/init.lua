@@ -23,6 +23,7 @@ require("plug.feline")
 require("plug.gitsigns")
 require("plug.comment")
 require("plug.bufferline")
+require("plug.alpha")
 
 return require("packer").startup(function()
     use "wbthomason/packer.nvim"
@@ -68,6 +69,10 @@ return require("packer").startup(function()
     use "feline-nvim/feline.nvim"
     use "lewis6991/gitsigns.nvim"
     use "terrortylor/nvim-comment"
+    use {
+      'goolord/alpha-nvim',
+      requires = { 'nvim-tree/nvim-web-devicons' }
+    }
 
     if packer_bootstrap then
       require("packer").sync()
