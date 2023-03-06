@@ -24,7 +24,7 @@ require("plug.comment")
 require("plug.bufferline")
 require("plug.alpha")
 
-return require("packer").startup(function()
+return require("packer").startup(function(use)
 	use("wbthomason/packer.nvim")
 	use("williamboman/mason.nvim")
 	use("williamboman/mason-lspconfig.nvim")
